@@ -3,71 +3,106 @@ body {
     width: 960px;
     color: #777;
     background: #777;
-    font-size: 18px;
+    font-size: 18px;    
 }
 
-#page_header {
-    width: 100%;
-    text-align: center;
-    border-style: 1px;
-
-}
-
-#page_header nav ul, #page_footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#page_header nav ul li, #page_footer ul li {
-    padding: 0;
-    margin: 0 20px 0 0;
-    display: inline;
-}
-
-
-#page_header, nav, #section_applications, #sidebar_releases, #page_footer  {
-    background: #ebebeb;
-} 
-
- #article_irisplus {
-    color: #ebebeb;
-    background: red;
-}
-
-h1, p {
+p {
     color: #777;
     background: #ebebeb;
 }
 
 h1 {
+    color: #777;
     text-align: center;
-}
-
-#section_applications {
-    width: 495px;
     background: #ebebeb;
-    border-width: 5px;
-    border-color: beige;
+}
+
+/*#section_releases h1, 
+#section_applications h1,*/
+#article_iris h1,
+#article_irisplus h1 
+{ text-align: left; font-size: 12px;}
+
+#article_iris h2,
+#article_irisplus h2 
+{ text-align: left; font-size: 11px; }
+
+#article_iris h3,
+#article_irisplus h3 
+{ text-align: left; font-size: 10px; }
+
+
+article { border: 1px solid black; }
+
+#page_header {
+    width: 100%;
+    text-align: center;
+    border-style: 1px;
+    background: #ebebeb;
+}
+
+#section_navigator {
+    width: 100%;
+    text-align: center;
+    border-style: 1px;
+    background: #ebebeb;
+    margin: 5px 5px 5px 5px;
+}
+
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
 }
 
 #section_applications {
+    margin: 5px 5px 5px 5px;
+    background: #ebebeb;
+    /*width: 495px;*/
+    width: 72%;
+    background: #ebebeb;
     float: left;
-    width: 74%;
+    border-style: 1px;
+}
+ 
+#article_iris {
+    margin: 5px 5px 5px 5px;
+    background: #ebebeb;
+    border-width: 1px;
+    border-color: black;
+}
+
+ #article_irisplus {
+    margin: 5px 5px 5px 5px;
+    background: #ebebeb;
+    border-width: 1px;
+    border-color: black;
 }
 
 #section_applications aside {
+    margin: 2px 2px 2px 2px;
     float: right;
     width: 35%;
-    margin-left: 5%;
     font-size: 20px;
     line-height: 20px;
-}
+} 
 
-
-#section_sidebar_releases {
+#section_releases {
+    margin: 5px 5px 5px 5px;
+    background: #ebebeb;
     float: right;
     width: 25%;
+    border-style: 1px;
 }
 
 #page_footer {
@@ -75,4 +110,13 @@ h1 {
     width: 100%;
     display: block;
     text-align: Center;
+    background: #ebebeb;
+}
+
+#page_footer ul li {
+    padding: 0;
+    margin: 0 20px 0 0;
+    display: inline;
+    text-align: center;
+    list-style: none;
 }
